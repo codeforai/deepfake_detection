@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: voice-detection-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: API_KEY
+        generateValue: true
+      - key: PORT
+        value: 8000

@@ -1,0 +1,174 @@
+{
+  "timestamp": "2026-02-16T13:35:02.586103",
+  "dataset_size": 5,
+  "test_percent": 100,
+  "results": [
+    {
+      "model_name": "Keras H5 ElevenLabs",
+      "accuracy": 60.0,
+      "avg_inference_ms": 8.7232332000001,
+      "std_inference_ms": 1.3728952115048758,
+      "min_inference_ms": 7.681083000000033,
+      "max_inference_ms": 11.410999999999838,
+      "avg_cpu_percent": 861.4699999999999,
+      "total_samples": 5,
+      "correct_predictions": 3,
+      "total_errors": 2,
+      "errors_by_language": {
+        "ta": 1,
+        "en": 1,
+        "hi": 0,
+        "ma": 0,
+        "te": 0
+      },
+      "language_stats": {
+        "hi": {
+          "total": 1,
+          "errors": 0
+        },
+        "ta": {
+          "total": 1,
+          "errors": 1
+        },
+        "ma": {
+          "total": 1,
+          "errors": 0
+        },
+        "te": {
+          "total": 1,
+          "errors": 0
+        },
+        "en": {
+          "total": 1,
+          "errors": 1
+        }
+      },
+      "error_details": [
+        {
+          "file": "TAMIL_VOICE__HUMAN.mp3",
+          "actual": "Human",
+          "predicted": "AI",
+          "confidence": 0.8845522999763489,
+          "raw_prediction": 0.8845522999763489,
+          "language": "ta"
+        },
+        {
+          "file": "English_voice_AI_GENERATED.mp3",
+          "actual": "AI",
+          "predicted": "Human",
+          "confidence": 0.5829127728939056,
+          "raw_prediction": 0.41708722710609436,
+          "language": "en"
+        }
+      ],
+      "model_size_mb": 1.7267303466796875,
+      "model_path": "model/best_model_elevenlabs.h5"
+    },
+    {
+      "model_name": "Keras H5 General",
+      "accuracy": 80.0,
+      "avg_inference_ms": 3.8475747999999754,
+      "std_inference_ms": 0.13529106672564198,
+      "min_inference_ms": 3.728290999999828,
+      "max_inference_ms": 4.098334000000037,
+      "avg_cpu_percent": 294.87,
+      "total_samples": 5,
+      "correct_predictions": 4,
+      "total_errors": 1,
+      "errors_by_language": {
+        "ta": 1,
+        "hi": 0,
+        "ma": 0,
+        "te": 0,
+        "en": 0
+      },
+      "language_stats": {
+        "hi": {
+          "total": 1,
+          "errors": 0
+        },
+        "ta": {
+          "total": 1,
+          "errors": 1
+        },
+        "ma": {
+          "total": 1,
+          "errors": 0
+        },
+        "te": {
+          "total": 1,
+          "errors": 0
+        },
+        "en": {
+          "total": 1,
+          "errors": 0
+        }
+      },
+      "error_details": [
+        {
+          "file": "TAMIL_VOICE__HUMAN.mp3",
+          "actual": "Human",
+          "predicted": "AI",
+          "confidence": 0.8679786920547485,
+          "raw_prediction": 0.8679786920547485,
+          "language": "ta"
+        }
+      ],
+      "model_size_mb": 1.7267303466796875,
+      "model_path": "model/best_model_general.h5"
+    },
+    {
+      "model_name": "Keras H5 TTS",
+      "accuracy": 80.0,
+      "avg_inference_ms": 3.8059915999999916,
+      "std_inference_ms": 0.0753358529373814,
+      "min_inference_ms": 3.724083000000711,
+      "max_inference_ms": 3.930249999999802,
+      "avg_cpu_percent": 290.55,
+      "total_samples": 5,
+      "correct_predictions": 4,
+      "total_errors": 1,
+      "errors_by_language": {
+        "en": 1,
+        "hi": 0,
+        "ta": 0,
+        "ma": 0,
+        "te": 0
+      },
+      "language_stats": {
+        "hi": {
+          "total": 1,
+          "errors": 0
+        },
+        "ta": {
+          "total": 1,
+          "errors": 0
+        },
+        "ma": {
+          "total": 1,
+          "errors": 0
+        },
+        "te": {
+          "total": 1,
+          "errors": 0
+        },
+        "en": {
+          "total": 1,
+          "errors": 1
+        }
+      },
+      "error_details": [
+        {
+          "file": "English_voice_AI_GENERATED.mp3",
+          "actual": "AI",
+          "predicted": "Human",
+          "confidence": 0.9999855851719985,
+          "raw_prediction": 1.441482800146332e-05,
+          "language": "en"
+        }
+      ],
+      "model_size_mb": 1.726715087890625,
+      "model_path": "model/best_model_tts.h5"
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "timestamp": "2026-02-16T13:16:28.272462",
+  "dataset_size": 5,
+  "test_percent": 100,
+  "model1": "model/best_model_general.h5",
+  "model2": "model/best_model_tts.h5",
+  "results": [
+    {
+      "model_name": "Ensemble (Average)",
+      "accuracy": 80.0,
+      "avg_inference_ms": 18.605750000000043,
+      "std_inference_ms": 5.884428129135625,
+      "min_inference_ms": 15.471082999999997,
+      "max_inference_ms": 30.37254200000028,
+      "avg_cpu_percent": 312.86,
+      "total_samples": 5,
+      "correct_predictions": 4,
+      "total_errors": 1,
+      "errors_by_language": {
+        "en": 1,
+        "hi": 0,
+        "ta": 0,
+        "te": 0,
+        "ma": 0
+      },
+      "language_stats": {
+        "hi": {
+          "total": 1,
+          "errors": 0
+        },
+        "ta": {
+          "total": 1,
+          "errors": 0
+        },
+        "en": {
+          "total": 1,
+          "errors": 1
+        },
+        "te": {
+          "total": 1,
+          "errors": 0
+        },
+        "ma": {
+          "total": 1,
+          "errors": 0
+        }
+      },
+      "error_details": [
+        {
+          "file": "English_voice_AI_GENERATED.mp3",
+          "actual": "AI",
+          "predicted": "Human",
+          "confidence": 0.5690496611391609,
+          "raw_prediction": 0.4309503388608391,
+          "language": "en"
+        }
+      ],
+      "detailed_predictions": [
+        {
+          "file": "Hindi_Voice_HUMAN.mp3",
+          "model1_pred": 5.864010943490428e-10,
+          "model2_pred": 0.0,
+          "ensemble_pred": 2.932005471745214e-10,
+          "actual_label": 0,
+          "language": "hi"
+        },
+        {
+          "file": "TAMIL_VOICE__HUMAN.mp3",
+          "model1_pred": 0.8679786920547485,
+          "model2_pred": 1.542855966209911e-31,
+          "ensemble_pred": 0.43398934602737427,
+          "actual_label": 0,
+          "language": "ta"
+        },
+        {
+          "file": "English_voice_AI_GENERATED.mp3",
+          "model1_pred": 0.8618862628936768,
+          "model2_pred": 1.441482800146332e-05,
+          "ensemble_pred": 0.4309503388608391,
+          "actual_label": 1,
+          "language": "en"
+        },
+        {
+          "file": "Telugu_Voice_AI_GENERATED.mp3",
+          "model1_pred": 0.9997075796127319,
+          "model2_pred": 1.0,
+          "ensemble_pred": 0.999853789806366,
+          "actual_label": 1,
+          "language": "te"
+        },
+        {
+          "file": "Malayalam_AI_GENERATED.mp3",
+          "model1_pred": 0.9828563928604126,
+          "model2_pred": 1.0,
+          "ensemble_pred": 0.9914281964302063,
+          "actual_label": 1,
+          "language": "ma"
+        }
+      ],
+      "strategy": "average",
+      "weights": null,
+      "description": "Simple average of both models"
+    },
+    {
+      "model_name": "Ensemble (Weighted 60-40)",
+      "accuracy": 80.0,
+      "avg_inference_ms": 8.139758400000208,
+      "std_inference_ms": 0.1769171807152402,
+      "min_inference_ms": 7.983250000000108,
+      "max_inference_ms": 8.456375000000182,
+      "avg_cpu_percent": 267.50999999999993,
+      "total_samples": 5,
+      "correct_predictions": 4,
+      "total_errors": 1,
+      "errors_by_language": {
+        "ta": 1,
+        "hi": 0,
+        "en": 0,
+        "te": 0,
+        "ma": 0
+      },
+      "language_stats": {
+        "hi": {
+          "total": 1,
+          "errors": 0
+        },
+        "ta": {
+          "total": 1,
+          "errors": 1
+        },
+        "en": {
+          "total": 1,
+          "errors": 0
+        },
+        "te": {
+          "total": 1,
+          "errors": 0
+        },
+        "ma": {
+          "total": 1,
+          "errors": 0
+        }
+      },
+      "error_details": [
+        {
+          "file": "TAMIL_VOICE__HUMAN.mp3",
+          "actual": "Human",
+          "predicted": "AI",
+          "confidence": 0.5207872152328491,
+          "raw_prediction": 0.5207872152328491,
+          "language": "ta"
+        }
+      ],
+      "strategy": "weighted",
+      "weights": [
+        0.6,
+        0.4
+      ],
+      "description": "Weighted: 60% general, 40% TTS"
+    },
+    {
+      "model_name": "Ensemble (Weighted 50-50)",
+      "accuracy": 80.0,
+      "avg_inference_ms": 8.103466599999809,
+      "std_inference_ms": 0.06632148689097397,
+      "min_inference_ms": 7.981082999999778,
+      "max_inference_ms": 8.15704199999967,
+      "avg_cpu_percent": 273.56000000000006,
+      "total_samples": 5,
+      "correct_predictions": 4,
+      "total_errors": 1,
+      "errors_by_language": {
+        "en": 1,
+        "hi": 0,
+        "ta": 0,
+        "te": 0,
+        "ma": 0
+      },
+      "language_stats": {
+        "hi": {
+          "total": 1,
+          "errors": 0
+        },
+        "ta": {
+          "total": 1,
+          "errors": 0
+        },
+        "en": {
+          "total": 1,
+          "errors": 1
+        },
+        "te": {
+          "total": 1,
+          "errors": 0
+        },
+        "ma": {
+          "total": 1,
+          "errors": 0
+        }
+      },
+      "error_details": [
+        {
+          "file": "English_voice_AI_GENERATED.mp3",
+          "actual": "AI",
+          "predicted": "Human",
+          "confidence": 0.5690496611391609,
+          "raw_prediction": 0.4309503388608391,
+          "language": "en"
+        }
+      ],
+      "strategy": "weighted",
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "description": "Weighted: 50% general, 50% TTS"
+    },
+    {
+      "model_name": "Ensemble (Weighted 40-60)",
+      "accuracy": 80.0,
+      "avg_inference_ms": 8.116958199999758,
+      "std_inference_ms": 0.12813780409742248,
+      "min_inference_ms": 7.976499999999831,
+      "max_inference_ms": 8.317124999999592,
+      "avg_cpu_percent": 271.64000000000004,
+      "total_samples": 5,
+      "correct_predictions": 4,
+      "total_errors": 1,
+      "errors_by_language": {
+        "en": 1,
+        "hi": 0,
+        "ta": 0,
+        "te": 0,
+        "ma": 0
+      },
+      "language_stats": {
+        "hi": {
+          "total": 1,
+          "errors": 0
+        },
+        "ta": {
+          "total": 1,
+          "errors": 0
+        },
+        "en": {
+          "total": 1,
+          "errors": 1
+        },
+        "te": {
+          "total": 1,
+          "errors": 0
+        },
+        "ma": {
+          "total": 1,
+          "errors": 0
+        }
+      },
+      "error_details": [
+        {
+          "file": "English_voice_AI_GENERATED.mp3",
+          "actual": "AI",
+          "predicted": "Human",
+          "confidence": 0.6552368459457284,
+          "raw_prediction": 0.3447631540542716,
+          "language": "en"
+        }
+      ],
+      "strategy": "weighted",
+      "weights": [
+        0.4,
+        0.6
+      ],
+      "description": "Weighted: 40% general, 60% TTS"
+    },
+    {
+      "model_name": "Ensemble (Voting)",
+      "accuracy": 80.0,
+      "avg_inference_ms": 7.980116600000109,
+      "std_inference_ms": 0.09186246545908887,
+      "min_inference_ms": 7.833459000000431,
+      "max_inference_ms": 8.086915999999889,
+      "avg_cpu_percent": 250.38000000000002,
+      "total_samples": 5,
+      "correct_predictions": 4,
+      "total_errors": 1,
+      "errors_by_language": {
+        "en": 1,
+        "hi": 0,
+        "ta": 0,
+        "te": 0,
+        "ma": 0
+      },
+      "language_stats": {
+        "hi": {
+          "total": 1,
+          "errors": 0
+        },
+        "ta": {
+          "total": 1,
+          "errors": 0
+        },
+        "en": {
+          "total": 1,
+          "errors": 1
+        },
+        "te": {
+          "total": 1,
+          "errors": 0
+        },
+        "ma": {
+          "total": 1,
+          "errors": 0
+        }
+      },
+      "error_details": [
+        {
+          "file": "English_voice_AI_GENERATED.mp3",
+          "actual": "AI",
+          "predicted": "Human",
+          "confidence": 0.5690496611391609,
+          "raw_prediction": 0.4309503388608391,
+          "language": "en"
+        }
+      ],
+      "strategy": "voting",
+      "weights": null,
+      "description": "Hard voting with average tie-breaker"
+    }
+  ]
+}

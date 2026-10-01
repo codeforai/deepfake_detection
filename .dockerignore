@@ -1,0 +1,19 @@
+__pycache__
+*.pyc
+*.pyo
+.git
+.gitignore
+.env
+.venv
+venv
+*.md
+.DS_Store
+*.log
+
+# Not needed to run the service
+.github
+notebooks
+tests
+benchmarks
+experiments
+requirements-dev.txt
